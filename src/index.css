@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #FACC15;
+  --color-brand-orange: #F97316;
+  --color-brand-stone: #F5F5F4;
+  --radius-2xl: 1.5rem;
+}
+
+:root {
+  background-color: var(--color-brand-stone);
+  color: #1C1917;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  @apply bg-brand-orange text-white px-6 py-3 rounded-2xl font-bold transition-all hover:scale-105 active:scale-95 shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-brand-yellow text-stone-900 px-6 py-3 rounded-2xl font-bold transition-all hover:scale-105 active:scale-95 shadow-md;
+}
