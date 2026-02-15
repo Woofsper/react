@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
-import History from './pages/History';
+import Analyze from './pages/Analyze';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
 import Navigation from './components/Navigation';
@@ -38,8 +38,8 @@ function App() {
             element={isLoggedIn ? <Home /> : <Navigate to="/login" />}
           />
           <Route
-            path="/history"
-            element={isLoggedIn ? <History /> : <Navigate to="/login" />}
+            path="/analyze"
+            element={isLoggedIn ? <Analyze /> : <Navigate to="/login" />}
           />
           <Route
             path="/profile"

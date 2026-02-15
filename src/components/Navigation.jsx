@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, History, User } from 'lucide-react';
+import { Home, Search, User } from 'lucide-react';
 
 const Navigation = () => {
     return (
@@ -15,11 +15,11 @@ const Navigation = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/history"
+                    to="/analyze"
                     className={({ isActive }) => `flex flex-col items-center gap-1 transition-colors ${isActive ? 'text-brand-orange' : 'text-stone-400'}`}
                 >
-                    <History size={24} />
-                    <span className="text-[10px] font-bold">기록</span>
+                    <Search size={24} />
+                    <span className="text-[10px] font-bold">AI분석</span>
                 </NavLink>
 
                 <NavLink

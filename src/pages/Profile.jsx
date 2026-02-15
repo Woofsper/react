@@ -1,5 +1,6 @@
 import React from 'react';
 import { LogOut, Dog, Settings, ChevronRight } from 'lucide-react';
+import profileImg from '../assets/seokjun.jpg';
 
 const Profile = ({ onLogout }) => {
     return (
@@ -13,13 +14,13 @@ const Profile = ({ onLogout }) => {
                 <div className="flex items-center gap-4 mb-6 pb-6 border-b border-stone-100">
                     <div className="w-20 h-20 bg-brand-yellow rounded-full flex items-center justify-center shrink-0 overflow-hidden border-2 border-brand-orange">
                         <img
-                            src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=200"
+                            src={profileImg}
                             alt="보유 강아지"
                             className="w-full h-full object-cover"
                         />
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold text-stone-800">멍멍이 보호자님</h3>
+                        <h3 className="text-xl font-bold text-stone-800">배석준 보호자님</h3>
                         <p className="text-stone-400 text-sm">alsdalsa@gmail.com</p>
                     </div>
                 </div>

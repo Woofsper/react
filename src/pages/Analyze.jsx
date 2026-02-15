@@ -3,7 +3,7 @@ import { Upload, MessageCircle, Sparkles, Loader2 } from 'lucide-react';
 import { db } from '../firebase';
 import { ref, push, set } from 'firebase/database';
 
-const History = () => {
+const Analyze = () => {
     const [analyzing, setAnalyzing] = useState(false);
     const [result, setResult] = useState(null);
 
@@ -99,4 +99,4 @@ const History = () => {
     );
 };
 
-export default History;
+export default Analyze;
