@@ -39,7 +39,7 @@ const History = () => {
 
             {history.length === 0 ? (
                 <div className="text-center py-20 bg-white rounded-3xl border-2 border-dashed border-stone-200">
-                    <p className="text-stone-400">심리 분석 기록이 아직 없어요.<br />메인 화면에서 분석을 시작해보세요!</p>
+                    <p className="text-stone-400">심리 분석 기록이 아직 없어요.<br />분석을 시작해보세요!</p>
                 </div>
             ) : (
                 <div className="space-y-4">
